@@ -5,8 +5,8 @@
 
     color: #1C1C1D;
 }
+/*deafult font*/
 p,label,select {
-    /*deafult font*/
     font-family: 'Times New Roman';
     font-style: normal;
     font-weight: normal;
@@ -16,55 +16,55 @@ p,label,select {
     
 }
 /* custom checkboxes */
-.check {
-    display: block;
-    height: min-content;
-    position: relative;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.check input {
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 18px;
-  }
-  .box  {
-    position: absolute;
-    top: 2px;
-    left: 0;
-    height: 14px;
-    width: 14px;
-    background-color: transparent;
-    border: 1px solid #1C1C1D;
-  }
-  .check:hover input ~ .box {
-    border: 1px dotted black;
-  }
-  .box:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  .check input:checked ~ .box:after {
-    display: block;
-  }
-  .check .box:after {
-    left: 3px;
-    top: 0px;
-    width: 5px;
-    height: 10px;
-    border:solid rgb(0, 0, 0);
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
+    .check {
+        display: block;
+        height: min-content;
+        position: relative;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .check input {
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 18px;
+    }
+    .box  {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 14px;
+      width: 14px;
+      background-color: transparent;
+      border: 1px solid #1C1C1D;
+    }
+    .check:hover input ~ .box {
+      border: 1px dotted black;
+    }
+    .box:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+    .check input:checked ~ .box:after {
+      display: block;
+    }
+    .check .box:after {
+      left: 3px;
+      top: 0px;
+      width: 5px;
+      height: 10px;
+      border:solid rgb(0, 0, 0);
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
 /*bold deafult text*/
 .bold {
     font-family: 'Times New Roman', Times, serif;
@@ -141,7 +141,7 @@ header img {
     gap: 16px;
 }
 .divider {
-border-top: 1px solid #1C1C1D;
+    border-top: 1px solid #1C1C1D;
 }
 .pad8 {
     margin: 8px 0;
@@ -155,11 +155,11 @@ border-top: 1px solid #1C1C1D;
 }
 .small {
     font-family: Times New Roman;
-font-style: normal;
-font-weight: normal;
-font-size: 17px;
-line-height: 100%;
-letter-spacing: -0.055em;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: -0.055em;
 }
 .pushleft {
     position: relative;
@@ -188,7 +188,7 @@ letter-spacing: -0.055em;
     white-space: nowrap;
 }
 #name {
-max-width: 155px;
+        max-width: 155px;
 }
 .buttoncontainer {
     width: max-content;
@@ -196,11 +196,10 @@ max-width: 155px;
     justify-content:end ;
 }
 .age-gender-length {
-width:46px;
-text-align: center;
+    width:46px;
+    text-align: center;
 }
 .textarea-injury {
-    
     height: 42px;
     width:100% !important;
     resize: none;
@@ -208,7 +207,6 @@ text-align: center;
     line-height: 120%;
 }
 .textarea-remarks {
-    
     height: 105px;
     width:100% !important;
     resize: none;
