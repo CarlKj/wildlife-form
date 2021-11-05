@@ -80,10 +80,11 @@ body {
     display: flex;
     justify-content: center;
 }
+/* main container */
 .container {
     width: 1036px;
     height: max-content;
-    background: #E6E1DA;
+    background: #eee7dd;
     border-right: 1px solid #1C1C1D;
     border-left: 1px solid #1C1C1D;
     padding: 0 29px;
@@ -120,6 +121,7 @@ header img {
     width: auto;
     margin: 0 8px;
 }
+/*underscored text*/
 .textinput {
     background-image:url('./images/underscore.png');
     border: 0px;
