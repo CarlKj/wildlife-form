@@ -295,9 +295,7 @@ footer img {
     display: flex;
     gap: 8px;
 }
-#ranger-name {
-    width: 300px;
-}
+
 .yesnocontainer label {
     position: relative;
     top:3px
