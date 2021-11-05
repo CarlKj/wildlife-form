@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <title>Mystery Flesh Pit National Park</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="survey-form">
+            <header>
+                <div id="realheader">
+                    <div id="headers">
+                        <h1 id="title">Wildlife Incident Report</h1>
+                        <h2 id="sub-title">Form I-3</h2>
+                    </div>
+                    <div id="logos">
+                        <img src="./images/interioarrr.png" alt="united states department of the interior">
+                        <img src="./images/natpark.png" alt="national park service">
+                    </div>
+                </div>
+                <div id="form-1">
+                    <p class="bold">CHECK ALL THAT APPLY:</p>
+                    <label for="human-injury" class="check"><input id="human-injury" type="checkbox" value="1"
+                            name="injury-fatality"><span class="box" required></span>Human Injury</label>
+                    <label for="human-fatality" class="check"><input id="human-fatality" type="checkbox" value="1"
+                            name="injury-fatality"><span class="box" required></span>Human Fatality</label>
+                    <label for="wildlife-injury" class="check"><input id="wildlife-injury" type="checkbox" value="1" 
+                            name="injury-fatality"><span class="box" required></span>Wildlife Injury</label>
+                    <label for="wildlife-fatality" class="check"><input id="wildlife-fatality" type="checkbox" value="1"
+                            name="injury-fatality"><span class="box" required></span>Wildlife Fatality</label>
+                </div>
+            </header>
+            <div class="divider margin-down"></div>
+            <div class="instructinfo">
+                <p class="bold pad8">INSTRUCTIONS TO PARK RANGER:</p>
+                <p class="small">This form is to be used for reporting all accidents arising from wildlife related <br>
+                    incidents
+                    classified as follows:</p>
+                <p id="pushleft">An accident/incident resulting from the actions of park wildlife which causes
+                    the injury or
+                    death of any
+                    person(s).<br>
+                    An accident/incident resulting from the actions of park guests which causes the injury or death of
+                    any
+                    wildlife.<br>
+                    Any other accidents/incidents resulting from human interaction with wildlife which results in the
+                    injury
+                    or death of any person(s) or wildife.
+                </p>
+                <p id="description">NOTE: If possible, firerarms, tools, ammunition or other equiment involved in an
+                    accident/incident should
+                    be taken into the custody of the investigating officer for testing an/or evaluation</p>
+            </div>
+            <div class="divider"></div>
+            <main>
+                <div id="info-start">
+                    <div class="contained">
+                        <div class="textcont" style="margin-left: 0;">
+                            <label for="name" id="name-label">Name Of Individual involved:</label><input type="text" class="textinput" id="name" required placeholder=" _ _ _ _ _ _ _"></input>
+                            
+                        </div>
+                        <div class="textcont">
+                            <label id="number-label" for="number">
+
+                            
+                            <p>Age:</p>
+                        </label>
+                            <input type="number" min="0" max="150" id="number" class="textinput age-gender-length" placeholder="__"
+                                required></input>
+                        </div>
+                        <div class="textcont">
+                            <p>Gender:</p>
+                            <input type="text" class="textinput age-gender-length" required></input>
+                        </div>
+                        <div class="textcont" style="margin-left: 0; width: 100%; justify-content: space-between;">
+                            <p>Preexisting Conditions/Injuries:</p>
+                            <textarea class="textinput textarea-injury"></textarea>
+                        </div>
+                    </div>
+                    <div class="contained-side">
+                        <p>Report submitted by:</p>
+                        <div class="buttoncontainer">
+                            <label for="primary-individual" class="check"><input id="primary-individual" type="radio" value="2"
+                                    name="reporter"><span class="box"></span>Primary individual</label>
+                        </div>
+                        <div class="buttoncontainer">
+                            <label for="other-individual" class="check"><input id="other-individual" type="radio" value="2"
+                                    name="reporter"><span class="box"></span>Other individual</label>
+                        </div>
+                        <div class="buttoncontainer">
+                            <label for="park-ranger" class="check"><input id="park-ranger" type="radio" value="2"
+                                    name="reporter"><span class="box"></span>Park ranger</label>
+                        </div>
+                    </div>
+                </div>
+                <p>Firearms/Equipment Involved: (Check All That Apply)</p>
+                <div class="info-weapons">
+                <div class="pack">
+                    <label for="Shotgun" class="check"><input                 id="Shotgun" type="checkbox" name="firerarms" value="1">                <span class="box"></span>Shotgun</label>
+                    <label for="Rifle" class="check"><input                   id="Rifle" type="checkbox" name="firerarms" value="1">                  <span class="box"></span>Rifle</label>
+                    <label for="Handgun" class="check"><input                 id="Handgun" type="checkbox" name="firerarms" value="1">                <span class="box"></span>Handgun</label>
+                    <label for="Saw" class="check"><input                     id="Saw" type="checkbox" name="firerarms" value="1">                    <span class="box"></span>Saw</label>
+                </div> <div class="pack">
+                    <label for="Crossbow" class="check"><input                id="Crossbow" type="checkbox" name="firerarms" value="1">               <span class="box"></span>Crossbow</label>
+                    <label for="Knife-Bladed-Weapon" class="check"><input     id="Knife-Bladed-Weapon" type="checkbox" name="firerarms" value="1">    <span class="box"></span>Knife/Bladed Weapon</label>
+                    <label for="Mining-Explosive" class="check"><input        id="Mining-Explosive" type="checkbox" name="firerarms" value="1">       <span class="box"></span>Mining Explosive</label>
+                    <label for="aem-unit" class="check"><input                id="aem-unit" type="checkbox" name="firerarms" value="1">               <span class="box"></span>A.E.M Unit</label>
+                </div> <div class="pack">
+                    <label for="endoscope-rifle" class="check"><input         id="endoscope-rifle" type="checkbox" name="firerarms" value="1">        <span class="box"></span>Endoscope Rifle</label>
+                    <label for="interventerial-tent" class="check"><input     id="interventerial-tent" type="checkbox" name="firerarms" value="1">    <span class="box"></span>Interventerial Tent</label>
+                    <label for="surveying-instrument" class="check"><input    id="surveying-instrument" type="checkbox" name="firerarms" value="1">   <span class="box"></span>Surveying Instrument </label>
+                    <label for="monopole-device" class="check"><input         id="monopole-device" type="checkbox" name="firerarms" value="1">        <span class="box"></span>Monopole Device</label>
+                </div><div class="pack notopmargin">
+                    <label for="morcellation-instrument" class="check"><input id="morcellation-instrument" type="checkbox" name="firerarms" value="1"><span class="box"></span>Morcellation Instrument</label>
+                    <label for="other" class="check"><input                   id="other" type="checkbox" name="firerarms" value="1">                  <span class="box"></span>Other:<input type="text" class="textinput other-weapon"></input></label>
+                </div>
+                </div>
+                <div class="divider margin-down"></div>
+                <p>Wildlife Involved: (Check All That Apply)</p>
+                <div class="hugepart">
+                        <div class="pack2">
+                    <label for="amorphous-shame" class="check">
+                     <input id="amorphous-shame" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Amorphous Shame</label>
+                    <label for="amoebic-organism" class="check">
+                     <input id="amoebic-organism" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Amoebic Organism</label>
+                    <label for="aquifer-leech" class="check">
+                     <input id="aquifer-leech" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Aquifer  Leech</label>
+                    <label for="armadillo" class="check">
+                     <input id="armadillo" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Armadillo</label>
+                    <label for="bat" class="check">
+                     <input id="bat" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Bat</label>
+                    <label for="ballast-siren" class="check">
+                     <input id="ballast-siren" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Ballast Siren</label>
+                    <label for="greater" class="check pushleft">
+                     <input id="greater" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Greater</label>
+                    <label for="lesser" class="check pushleft">
+                     <input id="lesser" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Lesser</label>
+                    <label for="bone-mite" class="check">
+                     <input id="bone-mite" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Bone Mite</label>
+                    <label for="bristleworm" class="check">
+                     <input id="bristleworm" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Bristleworm</label>
+                    <label for="gastric" class="check pushleft">
+                     <input id="gastric" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gastric</label>
+                    <label for="vacular" class="check pushleft">
+                     <input id="vacular" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Vascular</label>
+                    <label for="ocular" class="check pushleft">
+                     <input id="ocular" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Ocular</label>
+                    <label for="buoyoon" class="check">
+                     <input id="buoyoon" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Buoyoon</label>
+                    <label for="cloistropod" class="check">
+                     <input id="cloistropod" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Cloistropod</label>
+                        </div><div class="pack2">
+                    <label for="copepod" class="check">
+                     <input id="copepod" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Copepod</label>
+                    <label for="abyssal" class="check pushleft">
+                     <input id="abyssal" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Abyssal</label>
+                    <label for="common" class="check pushleft">
+                     <input id="common" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Common</label>
+                    <label for="osteopathic" class="check pushleft">
+                     <input id="osteopathic" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Osteopathic</label>
+                    <label for="compound-organism" class="check">
+                     <input id="compound-organism" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Compound Organism</label>
+                    <label for="cow" class="check">
+                     <input id="cow" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Cow</label>
+                    <label for="coyote" class="check">
+                     <input id="coyote" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Coyote</label>
+                    <label for="crop-louse" class="check">
+                     <input id="crop-louse" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Crop Louse</label>
+                    <label for="cryptocairn" class="check">
+                     <input id="cryptocairn" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Cryptocairn</label>
+                    <label for="deer" class="check">
+                     <input id="deer" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Deer</label>
+                    <label for="eagle" class="check">
+                     <input id="eagle" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Eagle</label>
+                    <label for="elk" class="check">
+                     <input id="elk" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Elk</label>
+                    <label for="flatworm" class="check">
+                     <input id="flatworm" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Flatworm</label>
+                    <label for="fungal-growth" class="check">
+                     <input id="fungal-growth" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Fungal Growth</label>
+                    <label for="gangliotode" class="check">
+                     <input id="gangliotode" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gangliotode</label>
+                        </div><div class="pack2">
+                    <label for="gasp-owl" class="check">
+                     <input id="gasp-owl" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gasp Owl</label>
+                    <label for="gastric-manatee" class="check">
+                     <input id="gastric-manatee" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gastric Manatee</label>
+                    <label for="gastric-whale" class="check">
+                     <input id="gastric-whale" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gastric Whale</label>
+                    <label for="gigantipede" class="check">
+                     <input id="gigantipede" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gigantipede</label>
+                    <label for="intestinal-wraith" class="check">
+                     <input id="intestinal-wraith" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Intestinal Wraith</label>
+                    <label for="kryschenkos-mollusc" class="check">
+                     <input id="kryschenkos-mollusc" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Kryschenko's Mollusc</label>
+                    <label for="lenticulated-moss" class="check">
+                     <input id="lenticulated-moss" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Lenticulated Moss</label>
+                    <label for="macrobacterium" class="check">
+                     <input id="macrobacterium" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Macrobacterium</label>
+                    <label for="macroparabacterium" class="check">
+                     <input id="macroparabacterium" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Macroparabacterium</label>
+                    <label for="macrosquito" class="check">
+                     <input id="macrosquito" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Macrosquito</label>
+                    <label for="mesogeal-tricecapod" class="check">
+                     <input id="mesogeal-tricecapod" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Mesogeal Tricecapod</label>
+                    <label for="orthopod" class="check">
+                     <input id="orthopod" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Orthopod</label>
+                    <label for="segmented" class="check pushleft">
+                     <input id="segmented" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Segmented</label>
+                    <label for="non-segmented" class="check pushleft">
+                     <input id="non-segmented" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Non Segmented</label>
+                    <label for="pneumocay" class="check">
+                     <input id="pneumocay" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Pneumocay</label>
+                        </div><div class="pack2">
+                    <label for="polyp" class="check">
+                     <input id="polyp" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Polyp</label>
+                    <label for="common" class="check pushleft">
+                     <input id="common" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Common</label>
+                    <label for="fungal" class="check pushleft">
+                     <input id="fungal" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Fungal</label>
+                    <label for="gastric" class="check pushleft">
+                     <input id="gastric" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Gastric</label>
+                    <label for="vascular" class="check pushleft">
+                     <input id="vascular" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Vascular</label>
+                    <label for="optic" class="check pushleft">
+                     <input id="optic" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Optic</label>
+                    <label for="shamble" class="check">
+                     <input id="shamble" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Shamble</label>
+                    <label for="elongated" class="check pushleft">
+                     <input id="elongated" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Elongated</label>
+                    <label for="venous" class="check pushleft">
+                     <input id="venous" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Venous</label>
+                    <label for="triocanth" class="check">
+                     <input id="triocanth" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Triocanth</label>
+                    <label for="white-giant" class="check">
+                     <input id="white-giant" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>White Giant</label>
+                    <label for="vitreous-sprite" class="check">
+                     <input id="vitreous-sprite" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Vitreous Sprite</label>
+                    <label for="unspecified" class="check">
+                     <input id="unspecified" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Unspecified</label>
+                    <label for="unknown" class="check">
+                     <input id="unknown" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Unknown</label>
+                    <label for="other2" class="check">
+                     <input id="other2" type="checkbox" name="wildlife" value="1"><span class="box">
+                         </span>Other:<input type="text" class="textinput other-weapon"></input></label>
+                        </div>
+                </div>  
+                <div class="divider margin-down margin-up"></div>
+                <div class="info-end">
+                    <div class="contain-end"><p>Name Of Responding Incident Ranger:</p><input type="text" class="textinput" id="ranger-name" required></input></div>
+                    <div class="contain-end"><p>supervisor:</p><input type="text" class="textinput" id="supervisor"></input></div>
+                    <div class="yesnocontainer"><p>Medical Attention Required At Scene:</p>
+                        <label for="medsceneyes" class="check"><input id="medsceneyes" type="radio"  value="2" name="medscenee"><span class="box"></span>Yes</label>
+                        <label for="medsceneno" class="check"><input id="medsceneno" type="radio" value="2" name="medscenee"><span class="box"></span>No</label>
+                </div>
+                <div class="yesnocontainer"><p>Medical Attention Administered At Scene:</p>
+                    <label for="medsceneyesa" class="check"><input id="medsceneyesa" type="radio" value="2" name="medsceneed"><span class="box"></span>Yes</label>
+                    <label for="medscenenoa" class="check"><input id="medscenenoa" type="radio" value="2" name="medsceneed"><span class="box"></span>No</label>
+                </div>
+                    <div class="contain-end">
+                        <p>Damage To Park Infrastructure:</p>
+
+                        <select name="Damage" id="dropdown">
+                        <option value=”1”>N/A</option>
+                        <option value=”2”>Cosmetic/Minimal</option>
+                        <option value=”3”>Moderate</option>
+                        <option value=”4”>Catastrophic</option>
+                        </select>
+                </div>
+                <div class="yesnocontainer"><p>Ballast Present At Scene:</p>
+                    <label for="ballastyes" class="check"><input id="ballastyes" type="radio" value="2" name="beed"><span class="box"></span>Yes</label>
+                    <label for="ballastno" class="check"><input id="ballastno" type="radio" value="2" name="beed"><span class="box"></span>No</label>
+                </div>
+                <div class="contain-end-down">
+                <p>Responding Incident Ranger Remarks:</p>
+                            <textarea class="textinput textarea-remarks"></textarea>
+                </div>
+                <div class="end-container">
+                    <p class="bold"> FOR OFFICE USE ONLY</p>
+                    <div class="contain-end">
+                        <p>Reception Date:</p><input type="text" class="textinput endtext"></input>
+                    </div>
+                    <div class="contain-end">
+                        <p>TS  Archive No.:</p><input type="text" class="textinput endtext"></input>
+                    </div>
+                    <div class="contain-end">
+                    <label id="email-label" for="email-label"><p>Electronic Mail:</p></label><input placeholder="example@anodyne.com" type="email" name="email-label" class="textinput endtext" id="email" required></input>
+                    </div>
+                </div>
+                </div>
+                <div class="divider margin-down"></div>
+                <div class="contain-end-down">
+                <label for="submit" class="check bold" id="submits"><input id="submit" type="submit" value="2" name="submit"><span class="box"></span>Submit Form</label>
+            </div>
+            </form>
+        </main>
+        <footer>
+            <img src="./images/anodyne.png" alt="anodyne mining company">
+        </footer>
+    </div>
+</body>
+
+<script src="app.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
